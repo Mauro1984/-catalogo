@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+:root {
+  --color1: #c9a722;
+  --text: #036f9e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 100%;
+  height: 50px;
+  background-color: var(--color1);
+}
+.header a img {
+  max-width: 45px;
+  margin-left: 1.25rem;
+}
+.header h1 {
+  font-size: 1rem;
+  color: var(--text);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.main video {
+  max-width: 100vw;
+  height: auto;
+}
+.main h2,
+.main p {
+  max-width: 75vw;
+  margin: 0 auto;
+}
+.main h2,
+.main h2 strong {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.main p,
+.main p strong {
+  font-size: 0.85rem;
+  font-weight: 300;
+  margin-bottom: 0.85rem;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 50px;
+  width: 100vw;
+}
+footer,
+footer a {
+  background-color: var(--color1);
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--text);
+}
+.redes {
+  font-size: 45px;
+  margin-left: 20px;
+}
+.whatsapp {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 50px;
+  color: #72e779;
+}
+/*             ajustando imagens                */
+.main-catalago img {
+  display: block;
+  max-width: 100vw;
+  margin-top: 0px;
+  margin-bottom: -1px;
+}
+.mosaico {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.mosaico img {
+  max-width: 49vw;
+  float: left;
+  margin: -1px;
+}
+/* @media only screen and (min-width: 767px) and (max-width: 1020px) { */
+
+@media only screen and (min-width: 767px) and (max-width: 2560px) {
+  .header {
+    height: 80px;
+  }
+  .header a img {
+    max-width: 70px;
+  }
+  .main-catalago div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 0.75rem;
+  }
+  .main-catalago img {
+    display: inline-block;
+    max-width: 49vw;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+  }
+
+  .main-catalago .mosaico img {
+    max-width: 100vw;
+    float: none;
+    margin: auto;
+  }
+}
